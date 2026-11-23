@@ -7,6 +7,76 @@
 <title>Mi Portafolio | Programador</title>
 
 <style>
+
+/* ESTILOS DE PROYECTOS */
+
+.proyectos {
+    background: #111c32;
+}
+
+.proyectos-intro {
+    color: #cbd5e1;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.proyecto-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 25px;
+    transition: 0.3s ease;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-7px);
+    border-color: #38bdf8;
+}
+
+.proyecto-icono {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.proyecto-card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.proyecto-card p {
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.tecnologias span {
+    background: #0f172a;
+    color: #7dd3fc;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.estado-proyecto {
+    color: #94a3b8;
+    font-size: 13px;
+    border-top: 1px solid #334155;
+    padding-top: 14px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -199,8 +269,8 @@ footer {
     <p>
         Actualmente estudio preparatoria en el
         CBTis 271. Tengo conocimientos de Java,
-        programación orientada a objetos, HTML,
-        CSS y JavaScript.
+        programación orientada a objetos, HTML y
+        CSS 
 
         Estoy aprendiendo bases de datos y MySQL.
         Me interesa seguir desarrollando mis
@@ -233,11 +303,6 @@ footer {
         </div>
 
         <div class="tarjeta">
-            <h3>JavaScript</h3>
-            <p>Fundamentos de programación web.</p>
-        </div>
-
-        <div class="tarjeta">
             <h3>MySQL</h3>
             <p>Aprendiendo bases de datos.</p>
         </div>
@@ -248,37 +313,83 @@ footer {
 
 <section id="proyectos">
 
+    
+<section id="proyectos" class="proyectos">
     <h2>Mis proyectos</h2>
 
-    <div class="contenedor">
+    <p class="proyectos-intro">
+        Estos son algunos de mis proyectos de programación.
+        En ellos he puesto en práctica mis conocimientos
+        de Java, programación orientada a objetos,
+        interfaces gráficas y desarrollo web.
+    </p>
 
-        <div class="tarjeta">
-            <h3>Proyectos en Java</h3>
-            <p>
-                Ejercicios y programas desarrollados
-                utilizando Java y POO.
-            </p>
+    <div class="proyectos-grid">
+
+        <div class="proyecto-card">
+            <div class="proyecto-icono">📦</div>
+            <h3>Sistema de inventario</h3>
+            <p>Programa para registrar, organizar y controlar
+            los productos de una tienda.</p>
+            <div class="tecnologias">
+                <span>Java</span><span>POO</span>
+            </div>
         </div>
 
-        <div class="tarjeta">
-            <h3>Páginas web</h3>
-            <p>
-                Prácticas de desarrollo web con
-                HTML, CSS y JavaScript.
-            </p>
+        <div class="proyecto-card">
+            <div class="proyecto-icono">⚖️</div>
+            <h3>Calculadora de IMC</h3>
+            <p>Calcula el índice de masa corporal a partir
+            del peso y la estatura.</p>
+            <div class="tecnologias">
+                <span>Java</span><span>Swing</span>
+            </div>
         </div>
 
-        <div class="tarjeta">
-            <h3>Bases de datos</h3>
-            <p>
-                Aprendizaje de MySQL y manejo
-                de información.
-            </p>
+        <div class="proyecto-card">
+            <div class="proyecto-icono">🧮</div>
+            <h3>Calculadora básica</h3>
+            <p>Realiza operaciones matemáticas como suma,
+            resta, multiplicación y división.</p>
+            <div class="tecnologias">
+                <span>Java</span><span>Swing</span>
+            </div>
+        </div>
+
+        <div class="proyecto-card">
+            <div class="proyecto-icono">❌</div>
+            <h3>Juego del gato</h3>
+            <p>Juego de dos jugadores que permite competir
+            en un tablero de tres por tres.</p>
+            <div class="tecnologias">
+                <span>Java</span><span>Lógica</span>
+            </div>
+        </div>
+
+        <div class="proyecto-card">
+            <div class="proyecto-icono">🔢</div>
+            <h3>Ordenador de vectores</h3>
+            <p>Permite crear vectores, organizar sus
+            elementos y trabajar con arreglos.</p>
+            <div class="tecnologias">
+                <span>Java</span><span>Arreglos</span>
+            </div>
+        </div>
+
+        <div class="proyecto-card">
+            <div class="proyecto-icono">👕</div>
+            <h3>Tienda de ropa</h3>
+            <p>Proyecto enfocado en representar una tienda
+            de ropa y sus productos.</p>
+            <div class="tecnologias">
+                <span>Programación</span>
+            </div>
         </div>
 
     </div>
-
 </section>
+
+
 
 <footer>
     <p>Mi Portafolio | Programador en formación</p>
@@ -287,3 +398,5 @@ footer {
 
 </body>
 </html>
+
+
